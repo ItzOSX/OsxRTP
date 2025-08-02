@@ -1,0 +1,25 @@
+name: Osx_rtp
+version: '1.0-SNAPSHOT'
+main: osx_rtp
+api-version: '1.21'
+authors: [ Itz_OSX ]
+description: OSX rtp
+website: https://example.com
+
+commands:
+  rtp:
+    description: Random teleport system with support for RTP zones, queues, and more.
+    usage: /rtp [queue|reload]
+    permission: rtp.use
+    permission-message: "You do not have permission to use this command."
+
+permissions:
+  rtp.use:
+    description: Allows players to use the random teleport command.
+    default: true
+  rtp.queue:
+    description: Allows players to join or leave the RTP queue.
+    default: true
+  rtp.reload:
+    description: Allows reloading the plugin's configuration.
+    default: op

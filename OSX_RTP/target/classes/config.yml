@@ -1,0 +1,57 @@
+teleport:
+  minRadius: 100
+  maxRadius: 5000
+  blacklistBlocks:
+    - LAVA
+    - WATER
+
+systemMode:
+  rtp: true
+  rtpQueue: true
+  rtpZone: true
+
+enabledWorlds:
+  - world
+  - world_nether
+
+messageSettings:
+  chat: true
+  actionBar: true
+  title: true
+
+messages:
+  worldNotEnabled: "&cRTP is disabled in this world!"
+  queueJoined: "&aYou have joined the RTP queue!\n&eWait for another player to join."
+  queueJoinedActionBar: "&aWaiting for an opponent to join the queue..."
+  queueLeft: "&cYou have left the RTP queue."
+  queueLeftActionBar: "&cRemoved from the queue."
+  noSafeLocation: "&cCould not find a safe location for teleportation!"
+  paired: "&aYou have been paired with &b%opponent%&a!\n&cPrepare to fight!"
+  pairedActionBar: "&eOpponent: &b%opponent%"
+  teleportSuccess: "&aYou have been teleported to:\n&bX: %x%\n&bY: %y%\n&bZ: %z%"
+  teleportSuccessActionBar: "&aTeleported to &b%x%, %y%, %z%!"
+  teleportFailure: "&cFailed to find a safe location!"
+  zoneEnter: "&eYou entered a random teleport zone!"
+  zoneActionBar: "&bRandom Teleport Activated!"
+  zoneTitle: "&aRandom Teleport"
+  zoneSubtitle: "&bYou are being teleported..."
+  queueBroadcast: "&a%player% has joined the RTP queue! Type /rtp queue to join."
+  queueBroadcastActionBar: "&e%player% joined the RTP queue! Join now!"
+  reloadSuccess: "&aConfiguration reloaded successfully!\n&cAll changes are now applied."
+
+rtpZones:
+  - world: "world"
+    x1: 100
+    z1: 100
+    x2: 200
+    z2: 200
+  - world: "world_nether"
+    x1: -50
+    z1: -50
+    x2: 50
+    z2: 50
+  - world: "world_end"
+    x1: -50
+    z1: -50
+    x2: 50
+    z2: 50
